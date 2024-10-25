@@ -33,7 +33,7 @@ class Bank:
             elif choice == "3":
                 os.system('clear')
                 print("Exit")
-                break  # Exit the loop to end the program
+                break 
             else:
                 print("Invalid choice! Please try again.")
 
