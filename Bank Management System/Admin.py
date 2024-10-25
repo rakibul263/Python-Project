@@ -25,7 +25,6 @@ class Admin:
         return [str(account) for account in self.accounts]
 
     def total_balance(self):
-        self.total_balance = sum(account.balance for account in self.accounts)
         return f"Total bank balance  : {self.total_balance}"
 
     def total_loan(self):

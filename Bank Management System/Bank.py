@@ -111,7 +111,7 @@ class Bank:
 
         elif admin_choice == "4":
             print("-----------------Bank Balance-----------------")
-            print(admin_instance.total_balance())
+            print(admin_instance.total_balance)
             gap()
 
         elif admin_choice == "5":
