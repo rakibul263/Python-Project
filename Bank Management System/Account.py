@@ -14,6 +14,8 @@ class Account:
         # self.dictionary = {self.name : self.account_number}
     
     def deposit(self, amount):
+        if amount <= 0 or amount == "":
+            return f'Invalid deposit amount.'
         self.balance += amount
         self.statement.append(f"Deposited: {amount}")
         return f"{amount} deposited successfully."
