@@ -8,7 +8,7 @@ class Bank:
     def __init__(self, name):
         self.name = name
         self.admin_password = "rakibul263"
-        self.is_admin_authenticated = False  # Flag to track if admin is authenticated
+        self.is_admin_authenticated = False
 
     def show_menu(self):
         while True:
@@ -40,17 +40,15 @@ class Bank:
     def admin_menu(self):
         os.system('clear')
         
-        # Check if admin is already authenticated
         if not self.is_admin_authenticated:
             password = input("Enter Admin Password: ")
             if password == self.admin_password:
                 os.system('clear')
-                self.is_admin_authenticated = True  # Set the flag to True
+                self.is_admin_authenticated = True 
             else:
                 print("Incorrect password! Returning to the main menu.")
-                return  # Exit this method if password is incorrect
+                return 
 
-        # Admin menu options
         print("---------------Admin Menu---------------")
         print("|         1. Create Account            |")
         print("|         2. Delete Account            |")
